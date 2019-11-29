@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C066532-FB41-4B50-A727-2E5EB2BA9171}</ProjectGuid>
+    <ProjectGuid>{AA1A3C81-8644-4F9C-BD9E-DE13B7BF9B5A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>test</RootNamespace>
-    <AssemblyName>test</AssemblyName>
+    <RootNamespace>Høj_samhørighed_og_lav_kobling</RootNamespace>
+    <AssemblyName>Høj samhørighed og lav kobling</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,19 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cards\ATMCard.cs" />
-    <Compile Include="Card.cs" />
-    <Compile Include="Cards\Maestro.cs" />
-    <Compile Include="Cards\MasterCard.cs" />
-    <Compile Include="ICreditCard.cs" />
+    <Compile Include="CreateUser.cs" />
+    <Compile Include="Newsletter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Cards\Visa.cs" />
-    <Compile Include="Cards\VisaCreditCard.cs" />
+    <Compile Include="RegisterUser.cs" />
+    <Compile Include="SendToDb.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

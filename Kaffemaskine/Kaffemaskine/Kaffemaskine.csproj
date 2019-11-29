@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C066532-FB41-4B50-A727-2E5EB2BA9171}</ProjectGuid>
+    <ProjectGuid>{563FF576-7861-4491-BA77-DDC53163263F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>test</RootNamespace>
-    <AssemblyName>test</AssemblyName>
+    <RootNamespace>Kaffemaskine</RootNamespace>
+    <AssemblyName>Kaffemaskine</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cards\ATMCard.cs" />
-    <Compile Include="Card.cs" />
-    <Compile Include="Cards\Maestro.cs" />
-    <Compile Include="Cards\MasterCard.cs" />
-    <Compile Include="ICreditCard.cs" />
+    <Compile Include="Classes\CoffeContainer.cs" />
+    <Compile Include="Classes\CoffePowder.cs" />
+    <Compile Include="Classes\Filter.cs" />
+    <Compile Include="Classes\MakeCoffe.cs" />
+    <Compile Include="Classes\Power.cs" />
+    <Compile Include="Classes\WaterContainer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Cards\Visa.cs" />
-    <Compile Include="Cards\VisaCreditCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
