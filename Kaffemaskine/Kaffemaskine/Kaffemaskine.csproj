@@ -44,9 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CoffeContainer.cs" />
-    <Compile Include="Classes\CoffePowder.cs" />
+    <Compile Include="Classes\Powder.cs" />
     <Compile Include="Classes\Filter.cs" />
-    <Compile Include="Classes\MakeCoffe.cs" />
+    <Compile Include="Classes\TeaFlavor.cs" />
     <Compile Include="Classes\Power.cs" />
     <Compile Include="Classes\WaterContainer.cs" />
     <Compile Include="Program.cs" />

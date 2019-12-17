@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Kaffemaskine.Classes
+﻿namespace Kaffemaskine.Classes
 {
     class WaterContainer
     {
+        
+        public double water;
+
+        public string AddWater(double addWater)
+        {
+            water += addWater;
+            if (water > 150)
+            {
+                return "full";
+            }
+            else
+            {
+                return "Water added";
+            }
+        }
+       
+
     }
 }

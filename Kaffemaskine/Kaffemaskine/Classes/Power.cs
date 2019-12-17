@@ -1,13 +1,31 @@
-﻿namespace Kaffemaskine.Classes
+﻿using System.Threading;
+
+namespace Kaffemaskine.Classes
 {
     class Power
     {
-        public string powerOn()
+        public bool power = false;
+        public string PowerOn(bool powder,double water)
         {
-            return "Power on";
+            if (water > 0)
+            {
+                if (powder)
+                {
+                    if (power == false)
+                    {
+                        power = true;
+                        TeaFlavor drink = new TeaFlavor();
+                        Thread.Sleep(4000);
+                        return "Drink is finish";
+                    }
+                }
+                return "No powder";
+            }
+
+            return "No water!";
         }
 
-        public string powerOff()
+        public string PowerOff()
         {
             return "Power off";
         }
