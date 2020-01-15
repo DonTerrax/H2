@@ -27,6 +27,6 @@ namespace Factory_pattern
             return Name;
         }
 
-        
+
     }
 }
