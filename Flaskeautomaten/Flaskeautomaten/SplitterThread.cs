@@ -9,7 +9,7 @@ namespace Flaskeautomaten
     {
         public static void SodaBeerSplitter()
         {
-            //temp soda nad beer queues until they are put into new buffers
+            //temp soda and beer queues until they are put into new buffers
             Queue<Soda> sodaQueue = new Queue<Soda>(5);
             Queue<Beer> beerQueue = new Queue<Beer>(5);
             Random rnd = new Random();

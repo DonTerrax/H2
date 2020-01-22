@@ -20,7 +20,7 @@ namespace Flaskeautomaten
 
             //a thread that checks how many beers/sodas there is in the buffers
             //can be removed and program will still work
-            threadList.Add(new Thread(new ThreadStart(Buffer.BufferChecker)));
+            //threadList.Add(new Thread(new ThreadStart(Buffer.BufferChecker)));
 
             //starts the program
             foreach (Thread thread in threadList)

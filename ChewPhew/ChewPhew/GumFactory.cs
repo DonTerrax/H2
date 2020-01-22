@@ -1,32 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ChewPhew.GumTypes;
+using ChewPhew;
 
 namespace ChewPhew
 {
     class GumFactory
     {
-        Gum[]gum = new Gum[55];
-        private readonly int[] procent = new[] {25,12,20,19,14,10};
-        
-        public Gum[] CreateGum()
+        private static object instance;
+       
+
+        public Gum[] gum =
         {
+            new Gum("blue", "Blueberry"),
+            new Gum("Purple", "Blackberry"), 
+            new Gum("Yellow", "Tutti Frutti"),
+            new Gum("Brown", "Brownie"),
+            new Gum("Red", "Strawberry"),
+            new Gum("Green", "Apple"),
+        };
 
-            Gum blue = new Blue("blue", "Blueberry");
-            Gum purple = new Purple("Purple", "Blackberry");
-            Gum yellow = new Yellow("Yellow", "Tutti Frutti");
-            Gum brown = new Brown("Brownie", "Brown");
-            Gum red = new Red("Red", "Strawberry");
-            Gum green = new Green("Green", "Apple");
-
-            for (int i = 0; i < gum.Length; i++)
+        
+        public static GumFactory Instance
+        {
+            get
             {
-                
+                if (instance == null)
+                {
+                    instance = new GumFactory();
+                }
+                return (GumFactory) instance;
             }
-
         }
 
-        
+       
     }
 }

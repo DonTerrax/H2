@@ -4,17 +4,21 @@ using System.Text;
 
 namespace ChewPhew
 {
-    class Gum
+    class Gum 
     {
         private string flavor;
         private string color;
+        
         public string Flavor { get=>flavor; set=>flavor=value; }
         public string Color { get=>color; set=>color=value; }
-        public Gum(string flavor,string color)
+        
+        public Gum(string color,string flavor)
         {
             Flavor = flavor;
             Color = color;
+            
         }
-        
+
+      
     }
 }
