@@ -10,10 +10,5 @@ namespace BidsFlyingAroundApp
         public abstract void SetAltitude(double altitude);
         public abstract void Draw();
 
-
-
-
-
-
     }
 }
