@@ -17,7 +17,7 @@ namespace Flaskeautomaten
                 {
                     if (Buffer.SodaBuffer.Count != 0)
                     {
-                        Console.WriteLine("Consumer took a {0}, producer number: {1}", Buffer.SodaBuffer.Peek().Name, Buffer.SodaBuffer.Peek().ProductionNumber);
+                        Console.WriteLine("Mike took a {0}, producer number: {1}", Buffer.SodaBuffer.Peek().Name, Buffer.SodaBuffer.Peek().ProductionNumber);
                         Buffer.SodaBuffer.Dequeue();
                     }
 
@@ -40,7 +40,7 @@ namespace Flaskeautomaten
                 {
                     if (Buffer.BeerBuffer.Count != 0)
                     {
-                        Console.WriteLine("Consumer took a {0}, producer number: {1}", Buffer.BeerBuffer.Peek().Name, Buffer.BeerBuffer.Peek().ProductionNumber);
+                        Console.WriteLine("Jakub took a {0}, producer number: {1}", Buffer.BeerBuffer.Peek().Name, Buffer.BeerBuffer.Peek().ProductionNumber);
                         Buffer.BeerBuffer.Dequeue();
                     }
 
