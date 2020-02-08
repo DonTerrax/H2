@@ -47,6 +47,7 @@ namespace Flaskeautomaten
                         else
                         {
                             Console.WriteLine("Sodas produced: {0}", insertIntoBufferLoop);
+                            
                             break;
                         }
                     }
